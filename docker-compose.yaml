@@ -1,0 +1,13 @@
+services:
+  bot:
+    build: 
+      context: .
+      dockerfile: bot.Dockerfile
+    ports:
+      - "8003:8003"
+  mail:
+    build:
+      context: .
+      dockerfile: mail.Dockerfile
+    ports:
+      - "8004:8004"
