@@ -3,4 +3,4 @@
 
 # docker build -t mail_sender -f mail.Dockerfile .
 # docker run -dp 8004:8004 --name mail_sender_container mail_sender
-docker-compose up -d
+docker-compose up --build -d
